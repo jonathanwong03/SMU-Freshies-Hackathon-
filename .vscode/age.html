@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="p-3 mb-2 bg-info text-light">
+        <h1>SecureNow</h1>
+    </div>
+    <div class="p-3 mb-2 bg-danger text-white">
+        <h3 style="text-align:center;">Please verify your age. You need to be 21 or above</h3>
+    </div>
+    <div>
+        <form action="track.html" id="form">
+            <div class="age-div">
+              <input class="form-control" name="age" id="age" type="input" placeholder="Please Enter Your Age">
+            </div>            
+            <button type="submit" class="btn btn-primary" id="age-button" type="submit">Submit</button>  
+        </form>
+    </div>
+    <div class="home-button-div">
+        <a href="index.html">
+            <button class="btn btn-primary home-button" >Back To Home</button>
+        </a>
+    </div>
+    <script>
+        
+        let form = document.querySelector("#form")
+       
+        form.addEventListener("submit", function(e) {
+            let age = document.querySelector("#age")
+            if (isNaN(age.value)) {
+                form.setAttribute("action", "age.html")
+            }
+            else if (Number(age.value) < 21 || !Number.isInteger(Number(age.value))) {
+                form.setAttribute("action", "age.html")
+            }
+        })        
+    </script>
+</body>

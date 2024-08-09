@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <script src="app.js"></script>
-    <div class="p-3 mb-2 bg-info text-light">
-        <h1>SecureNow</h1>
-    </div>
-    <div class="p-3 mb-2 bg-warning text-dark">
-        <p class="description">
-            SecureNow is a 3-in-1 application that allows users, like you to mitigate the spread of harmful online content disseminated online. With the rampant spread of fake news in this day and age, cyberbullying, child abuse and terrorism, you are allowed to report any of such instances through this application! All you have to do is to tap on the "Report" button.
-        </p>
-        <p class="description">For this application, you will be provided with credits in your account. In order to gain more credits, feel free to complete daily tasks, or participate in bi-monthly competitions </p>
-    </div>
-    <div class="buttons-container">
-        <a href="login.html"><button type="button" class="btn btn-primary" id="login-button">Login</button></a>
-        <a href="register.html"><button type="button" class="btn btn-primary" id="register-button">Register</button></a>
-    </div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="p-3 mb-2 bg-info text-light">
+            <h1>SecureNow</h1>
+        </div>
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <p class="description">
+                SecureNow is a 3-in-1 application that allows users to mitigate the spread of harmful online content disseminated online. 
+            </p>
+            
+            <p class="description">
+                With the rampant spread of fake news in this day and age, cyberbullying, child abuse and terrorism, you are allowed to report any of such instances through this application! All you have to do is to tap on the "Report" button.
+            </p>
+            
+            <p class="description">
+                In the news page is a list of websites that contains harmful content that have been reported by users through SecureNow.
+            </p>
+            <p class="description">
+                Last but not least, you can also turn on or off the app tracker if you want to track websites that propagate harmful content or not. Whenever a user visits one of these websites, a notification will be alerted on the user's device.           
+            </p>
+        </div>
+        <div class="buttons-container" id="button-div">
+            <a href="report.html"><button class="btn btn-primary button">Report</button></a>
+            <a href="news.html"><button class="btn btn-primary button">News</button></a>
+            <a href="age.html"><button class="btn btn-primary button">Track</button></a>
+        </div>   
+    </body>
 </html>

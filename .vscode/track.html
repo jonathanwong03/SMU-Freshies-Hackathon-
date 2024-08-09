@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>  
+    <div class="p-3 mb-2 bg-info text-light">
+        <h1>SecureNow</h1>
+    </div>
+
+    <div id="button-div-2">
+        <a>
+            <button class="btn btn-primary button" id="stay-safe-button">Stay safe</button>
+        </a>
+        
+    </div>
+    <div class="p-3 mb-2 bg-danger text-white">
+        <h3 style="padding:20px; font-size:30px; text-align:center;" id="tracking-status">Your tracker is off</h3>
+      </div>
+    <div class="home-button-div">
+        <a href="index.html">
+            <button class="btn btn-primary home-button">Back To Home</button>
+        </a>
+    </div>
+    <script>
+        staySafeButton = document.querySelector("#stay-safe-button")
+        trackingStatus = document.querySelector("#tracking-status")
+        staySafeButton.addEventListener('click', function(e) {
+            if (trackingStatus.innerHTML == "Your tracker is off") {
+                trackingStatus.innerHTML = "Your tracker is on"
+            }
+            else {
+                trackingStatus.innerHTML = "Your tracker is off"
+            }
+        })
+    </script>
+</body>

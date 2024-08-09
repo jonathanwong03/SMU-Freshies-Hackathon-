@@ -9,39 +9,92 @@ h1 {
     padding: 20px;
 }
 
-.buttons-container {
-    width: 50%; 
-    margin: 0 auto;  
-    padding: 20px; 
-    text-align: center;  
+#button-div {     
+    margin: auto;
+    width: 40%;
+    padding: 20px;
+      
 }
 
-#login-button {
-    width: 150px;
-    height: 60px;
-    margin: 25px;
+.button {
+    height: 50px;
+    width: 111px;
+    margin: 20px;
 }
 
-#register-button {
-    width: 150px;
-    height: 60px;
-    margin: 25px;
+#button-div-2 {     
+    margin: auto;
+    width: 35%;
+    padding: 50px;
+      
 }
 
-#input-div1 {
+#stay-safe-button {
+    height: 270px;
+    width: 270px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.report-div {
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    padding: 30px;
+}
+
+#report-sumbit-button {
     width: 150px;
     height: 50px;
-   
+    padding: 10px;
+    margin-left: 200px;
 }
 
-#input-div2 {
-    width: 150px;
-    height: 50px;
-   
+.thank-you-div {
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+    
 }
 
-#input-div3 {
+#check-news-button {
     width: 150px;
+    height:50px;
+}
+
+.news-div {
+    padding: 30px;    
+}
+
+.home-button-div {
+    margin: auto;
+    width: 20%;
+    padding: 20px;
+}
+
+.home-button {
     height: 50px;
-   
+    width: 150px;
+    margin: 20px;
+}
+
+.age-div {
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+}
+
+#age {
+    width: 250px;
+    height: 65px;
+    margin: 20px;
+}
+
+#age-button {
+    height: 50px;
+    width: 150px;
+    margin-left: 545px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
